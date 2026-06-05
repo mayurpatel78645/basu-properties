@@ -8,46 +8,73 @@ export default function Home() {
       <Navbar />
 
       {/* Hero Section */}
-      <header className="hero-gradient text-white">
-        <div className="max-w-7xl mx-auto px-6 py-28 text-center">
-          <div className="inline-block bg-brand-yellow text-brand-dark font-bold px-5 py-2 rounded-full text-sm uppercase tracking-widest mb-8">
-            Premium Real Estate Agency
-          </div>
+      <header className="relative h-[85vh] min-h-[700px] overflow-hidden">
 
-          <h1 className="text-5xl md:text-7xl font-black leading-tight mb-8">
-            Secure Your Dream
-            <br />
-            Home Today
-          </h1>
+  {/* Background Image */}
+  <img
+    src="/assets/oasis-tower.jpeg"
+    alt="Luxury Residential Tower"
+    className="absolute inset-0 h-full w-full object-cover"
+  />
 
-          <p className="text-xl md:text-2xl max-w-3xl mx-auto mb-10 text-white/90">
-            Discover premium residential developments in Mira Road and
-            Bhayander with exceptional amenities, smart layouts, and
-            unbeatable connectivity.
-          </p>
+  {/* Dark Overlay */}
+  <div className="absolute inset-0 bg-black/55" />
 
-          <div className="flex flex-col sm:flex-row justify-center gap-4">
-            <a
-              href="#listings"
-              className="bg-brand-red text-white px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:scale-105 transition"
-            >
-              View Projects
-            </a>
+  {/* Content */}
+  <div className="relative z-10 flex h-full items-center justify-center">
+    <div className="max-w-5xl mx-auto text-center px-6">
 
-            <a
-              href="tel:9702350304"
-              className="bg-white text-brand-dark px-8 py-4 rounded-xl font-bold text-lg shadow-lg hover:scale-105 transition"
-            >
-              Call Now
-            </a>
-          </div>
-        </div>
-      </header>
+      <div className="inline-block bg-brand-yellow text-brand-dark font-bold px-5 py-2 rounded-full text-sm uppercase tracking-widest mb-6">
+        Premium Real Estate Agency
+      </div>
+
+      <h1 className="text-5xl md:text-7xl font-black text-white mb-8">
+        Find Your Dream Home
+        <br />
+        In Mira Road
+      </h1>
+
+      <p className="text-xl md:text-2xl text-gray-200 mb-10 max-w-3xl mx-auto">
+        Premium residential projects with world-class amenities,
+        excellent connectivity, and verified pricing.
+      </p>
+
+      <div className="flex flex-col sm:flex-row justify-center gap-4">
+
+        <a
+          href="#listings"
+          className="bg-brand-red text-white px-8 py-4 rounded-xl font-bold text-lg"
+        >
+          View Projects
+        </a>
+
+        <a
+          href="tel:9702350304"
+          className="bg-white text-brand-dark px-8 py-4 rounded-xl font-bold text-lg"
+        >
+          Call Office
+        </a>
+
+        <a
+          href="https://wa.me/919702350304"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="bg-brand-green text-white px-8 py-4 rounded-xl font-bold text-lg"
+        >
+          WhatsApp
+        </a>
+
+      </div>
+
+    </div>
+  </div>
+
+</header>
 
       {/* Featured Properties */}
       <main id="listings" className="max-w-7xl mx-auto px-6 py-20">
         <div className="text-center mb-16">
-          <h2 className="text-5xl font-black mb-4">
+          <h2 className="text-4xl md:text-5xl font-black mb-6">
             Featured Developments
           </h2>
 
@@ -87,10 +114,19 @@ export default function Home() {
             Schedule Your Site Visit
           </h2>
 
-          <p className="text-xl mb-8">
-            Speak directly with our property consultant and explore available
-            options today.
-          </p>
+          <div className="mb-10">
+  <p className="text-2xl font-bold">
+    Girish Patel
+  </p>
+
+  <p className="text-lg text-gray-200 mt-2">
+    Property Consultant
+  </p>
+
+  <p className="text-2xl font-bold mt-4">
+    +91 97023 50304
+  </p>
+</div>
 
           <div className="flex flex-col sm:flex-row justify-center gap-4">
             <a
