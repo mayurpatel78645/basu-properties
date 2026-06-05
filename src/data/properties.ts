@@ -1,6 +1,7 @@
 export interface Property {
   id: string;
   title: string;
+  image?: string;  // <-- ADD THIS LINE
   tagline: string;
   status: string;
   isUrgent: boolean;
@@ -9,7 +10,10 @@ export interface Property {
   price2bhk?: string;
   carpet2bhk?: string;
   highlights: string[];
-  agent: { name: string; phone: string; };
+  agent: {
+    name: string;
+    phone: string;
+  };
 }
 
 export const properties: Property[] = [
@@ -17,6 +21,7 @@ export const properties: Property[] = [
     id: "space-residence-2",
     title: "Space Residence-II",
     tagline: "Nearing Possession",
+    image: "/assets/space-residence.jpeg",
     status: "Under Construction",
     isUrgent: true,
     price1bhk: "93 Lakh all in",
@@ -29,6 +34,7 @@ export const properties: Property[] = [
   {
     id: "oasis-leena-group",
     title: "Oasis by Leena Group",
+    image: "/assets/oasis-tower.jpeg",
     tagline: "⚡ Golden Opportunity!",
     status: "42 Storey Luxury Landmark",
     isUrgent: false,
