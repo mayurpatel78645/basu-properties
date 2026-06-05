@@ -1,26 +1,113 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  /* Basu Properties Brand Palette */
+  --brand-red: #c8102e;
+  --brand-yellow: #f5c400;
+  --brand-green: #6b8e23;
+  --brand-dark: #1a252f;
+  --brand-light: #fffdf5;
+
+  --background: #fffdf5;
+  --foreground: #1a252f;
 }
 
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+
+  --color-brand-red: var(--brand-red);
+  --color-brand-yellow: var(--brand-yellow);
+  --color-brand-green: var(--brand-green);
+  --color-brand-dark: var(--brand-dark);
+  --color-brand-light: var(--brand-light);
+
+  --font-sans: Arial, Helvetica, sans-serif;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  scroll-behavior: smooth;
 }
 
 body {
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+img {
+  max-width: 100%;
+  display: block;
+}
+
+/* Hero Gradient */
+.hero-gradient {
+  background: linear-gradient(
+    135deg,
+    #6b8e23 0%,
+    #0b5345 100%
+  );
+}
+
+/* Luxury Card Styling */
+.property-card {
+  background: white;
+  border-radius: 24px;
+  border-top: 6px solid var(--brand-yellow);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+}
+
+.property-card:hover {
+  transform: translateY(-6px);
+}
+
+/* Primary Button */
+.btn-primary {
+  background: var(--brand-red);
+  color: white;
+  border-radius: 12px;
+  font-weight: 700;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* Section Heading */
+.section-title {
+  color: var(--brand-dark);
+  font-weight: 800;
+}
+
+/* Urgency Badge */
+.urgent-badge {
+  background: var(--brand-red);
+  color: white;
+  padding: 4px 12px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 700;
+}
+
+/* Premium Badge */
+.premium-badge {
+  background: var(--brand-yellow);
+  color: var(--brand-dark);
+  padding: 6px 14px;
+  border-radius: 999px;
+  font-size: 12px;
+  font-weight: 800;
 }
