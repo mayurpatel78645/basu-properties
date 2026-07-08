@@ -210,10 +210,6 @@ export default function Home() {
           </h2>
 
           <div className="mb-10">
-            <p className="text-2xl font-bold">
-              Girish Patel
-            </p>
-
             <p className="text-lg text-gray-200 mt-2">
               Property Consultant
             </p>
