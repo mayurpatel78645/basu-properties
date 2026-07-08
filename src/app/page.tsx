@@ -58,7 +58,16 @@ export default function Home() {
                 rel="noopener noreferrer"
                 className="bg-brand-green text-white px-8 py-4 rounded-xl font-bold text-lg"
               >
-                WhatsApp
+                WhatsApp: Girish Patel
+              </a>
+
+              <a
+                href="https://wa.me/9867354736"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="bg-brand-green text-white px-8 py-4 rounded-xl font-bold text-lg"
+              >
+                WhatsApp: Pankaj Rastogi
               </a>
             </div>
           </div>
@@ -81,10 +90,11 @@ export default function Home() {
           <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
             <video
               controls
+              muted
               className="w-full"
               poster="/assets/oasis-tower.jpeg"
             >
-              <source src="/assets/oasis.mp4" type="video/mp4" />
+              <source src="/assets/oasis_muted.mp4" type="video/mp4" />
             </video>
 
             <div className="p-6">
@@ -101,10 +111,11 @@ export default function Home() {
           <div className="bg-white rounded-3xl shadow-xl overflow-hidden">
             <video
               controls
+              muted
               className="w-full"
               poster="/assets/space-residence.jpeg"
             >
-              <source src="/assets/space.mp4" type="video/mp4" />
+              <source src="/assets/space_muted.mp4" type="video/mp4" />
             </video>
 
             <div className="p-6">
@@ -208,7 +219,7 @@ export default function Home() {
             </p>
 
             <p className="text-2xl font-bold mt-4">
-              +91 97023 50304
+              +91 97023 50304 <br/> +91 9702350304
             </p>
           </div>
 
@@ -218,6 +229,13 @@ export default function Home() {
               className="bg-brand-red text-white px-8 py-4 rounded-xl font-bold"
             >
               Call Girish Patel
+            </a>
+
+            <a
+              href="tel:9867354736"
+              className="bg-brand-red text-white px-8 py-4 rounded-xl font-bold"
+            >
+              Call Pankaj Rastogi
             </a>
 
             <a

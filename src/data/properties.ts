@@ -1,7 +1,7 @@
 export interface Property {
   id: string;
   title: string;
-  image?: string;  // <-- ADD THIS LINE
+  image?: string; 
   tagline: string;
   status: string;
   isUrgent: boolean;
