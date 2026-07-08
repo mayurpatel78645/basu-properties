@@ -215,7 +215,7 @@ export default function Home() {
             </p>
 
             <p className="text-2xl font-bold mt-4">
-              +91 97023 50304 <br/> +91 9702350304
+              +91 97023 50304 <br/> +91 9867354736
             </p>
           </div>
 
